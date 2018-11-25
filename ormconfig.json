@@ -1,0 +1,14 @@
+{
+  "name": "default",
+  "type": "mysql",
+  "host": "localhost",
+  "port": 3306,
+  "username": "root",
+  "password": "",
+  "database": "catchup_node",
+  "synchronize": false,
+  "logging": false,
+  "entities": [
+    "dist/entity/*"
+  ]
+}

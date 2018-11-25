@@ -1,0 +1,37 @@
+{
+  "name": "fyn-crowdsale-events",
+  "version": "0.1.0",
+  "description": "",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "author": {
+    "name": "Ramanjot Singh",
+    "email": "tallent35@netsetsoftware.com"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.4",
+    "@types/express": "^4.16.0",
+    "@types/helmet": "0.0.42",
+    "@types/node": "^9.6.20",
+    "nodemon": "^1.18.4",
+    "ts-node": "^7.0.1",
+    "typescript": "^2.8.1"
+  },
+  "dependencies": {
+    "bignumber.js": "^7.2.1",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "helmet": "^3.15.0",
+    "mysql": "^2.15.0",
+    "nodemailer": "^4.6.7",
+    "reflect-metadata": "^0.1.12",
+    "typeorm": "^0.2.6"
+  },
+  "scripts": {
+    "postinstall": "tsc -p ./",
+    "build": "tsc -p ./",
+    "start": "node dist/index.js",
+    "start:dev": "nodemon --exec ts-node src/index.ts",
+    "typeorm": "./node_modules/.bin/typeorm"
+  }
+}
